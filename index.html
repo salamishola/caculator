@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="phone">
+<div class="salm" id="screen" type="value" > </div>
+
+
+<br/>
+<div class="jou">
+<button onclick="show(9)">9</button>
+<button onclick="show(8)">8</button>
+<button onclick="show(7)">7</button>
+<button onclick="show('+')">+</button>
+
+<br/>
+<button onclick="show(6)">6</button>
+<button onclick="show(5)">5</button>
+<button onclick="show(4)">4</button>
+<button onclick="show('-')">-</button>
+<br/>
+<button onclick="show(3)">3</button>
+<button onclick="show(2)">2</button>
+<button onclick="show(1)">1</button>
+<button onclick="show('*')">*</button>
+<br/>
+<button onclick="show(0)">0</button>
+<button onclick="show('/')">/</button>
+<button onclick="remove()">c</button>
+<button onclick="answer()">=</button> -->
+</div>
+</div>
+
+
+
+
+
+
+    <script>
+       function show (x){
+        document.getElementById('screen').innerHTML +=x
+       } 
+       function remove(){
+        document.getElementById('screen').innerHTML = ''
+       }
+       function answer (){
+        document.getElementById('screen').innerHTML =eval( document.getElementById('screen').innerHTML )
+       }
+
+// var david1 ={ name:"david1",hairstyle:"allblack",clothe:"tshirt",shoe:"white",sock:"black"}
+// console.log(" one of my college name is ")
+      
+     
+
+
+    
+// document.write ("my name is  " + person .name +   " ,i am a " +   person . sex + " ,i work as a " + person.occupation.work +" ,i work  "+person .occupation.hours+ " in a week,"
+//   +"i earn "+person.occupation.salary +" .my phoneNumber  is  08096908958. " + "i work at"+ person.contact.address )
+
+
+// var cars=["benz", "iv",  "lexus", "volvo"];
+// console.log (cars[3]);
+
+var person=[{
+    name:'bayo',cars:['toyota','volve','benz','lexus'],occupation:{
+        address:['larva','bodija','sango'],work:'webDeveloper'
+    }
+}
+]
+console.log ( 'mr ' +person[0].name+ ' is a ' + person [0].occupation.work + ' he has two cars, one of it is  ' +person[0].cars[0]+ ' and the second one '+person[0]. cars[3] +' he has a house in ' + person[0].occupation.address[1]+' but usually stay in ' +person[0].occupation.address[2]+ ' and work in larva')
+
+
+
+
+
+
+
+// mr bayo is a webdeveloper, he has two cars one of it is toyota and the second one is lexus.
+// He lives has a house in bodija but usually stays in sango and works at larva
+
+
+
+
+
+    </script>
+</body>
+
+</html>
